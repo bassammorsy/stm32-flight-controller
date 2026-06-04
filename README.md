@@ -27,7 +27,9 @@ A custom 4-layer flight controller PCB designed from scratch in KiCad, targeting
     Docs/              — Full design portfolio PDF
 
 ## Design Portfolio
-A detailed design portfolio documenting every design decision, component selection rationale, datasheet calculations, and PCB layout strategy is available in the Docs folder.
+A full design portfolio documenting every schematic section, PCB layout decision, component selection rationale, and datasheet calculations is available below.
+
+[📄 View Full Design Portfolio (PDF)](Docs/STM32_Drone_FC_Portfolio.pdf)
 
 ## Key Design Decisions
 - 4-layer stackup: F.Cu (signals) / In1.Cu (GND plane) / In2.Cu (signal overflow) / B.Cu (3.3V distribution)
