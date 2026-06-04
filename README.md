@@ -17,14 +17,8 @@ A custom 4-layer flight controller PCB designed from scratch in KiCad, targeting
 | Motor Outputs | 4× DShot (TIM1 CH1-3, TIM8 CH4) |
 | Assembly | JLCPCB SMT — 43 component BOM |
 
-## Repository Structure
-
-    Hardware/
-        Schematic/     — KiCad schematic files
-        PCB/           — KiCad PCB layout files
-        Gerbers/       — Fabrication files for JLCPCB
-    BOM/               — Bill of materials with LCSC part numbers
-    Docs/              — Full design portfolio PDF
+## PCB Layout
+![PCB Top View](Images/pcb_top.png)
 
 ## Design Portfolio
 A full design portfolio documenting every schematic section, PCB layout decision, component selection rationale, and datasheet calculations is available below.
@@ -38,3 +32,12 @@ A full design portfolio documenting every schematic section, PCB layout decision
 - Ground via stitching at all signal layer transitions
 - Magnetometer placed at maximum distance from power section
 - USBLC6-2SC6 placed immediately at USB-C connector before any D+/D− routing
+
+## Repository Structure
+
+    Hardware/
+        Schematic/     — KiCad schematic files
+        PCB/           — KiCad PCB layout files
+        Gerbers/       — Fabrication files for JLCPCB
+    BOM/               — Bill of materials with LCSC part numbers
+    Docs/              — Full design portfolio PDF
