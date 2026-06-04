@@ -1,0 +1,32 @@
+(version 1)
+
+# USB differential pair impedance rule
+(rule "USB_impedance"
+   (constraint track_width (min 0.2mm) (opt 0.2mm))
+   (constraint clearance (min 0.2mm))
+   (condition "A.NetClass == 'USB' && B.NetClass == 'USB'")
+)
+
+# Power trace minimum width
+(rule "Power_min_width"
+   (constraint track_width (min 0.2mm))
+   (condition "A.NetClass == 'Power'")
+)
+
+# VBAT high current trace
+(rule "VBAT_width"
+   (constraint track_width (min 1.0mm))
+   (condition "A.Net == 'VBAT'")
+)
+
+# Crystal keepout
+(rule "Crystal_clearance"
+   (constraint clearance (min 0.5mm))
+   (condition "A.NetClass == 'Default' && B.memberOf('Y1')")
+)
+
+# IMU clearance
+(rule "IMU_clearance"
+   (constraint clearance (min 0.15mm))
+   (condition "A.memberOf('U8')")
+)
